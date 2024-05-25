@@ -1,4 +1,4 @@
-const ContoladorUsuarios = {
+const ControladorUsuarios = {
     crearUsuario: async (req, res) => {
         try {
          console.log("Solicitud: ", req.body);
@@ -54,7 +54,7 @@ const ContoladorUsuarios = {
     },
 }
 
-export default ContoladorUsuarios;
+export default ControladorUsuarios;
 
 // Estoesusado es usado para obtener los datos y crear/actualizar usuarios desde postman
 /*

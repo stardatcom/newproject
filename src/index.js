@@ -19,5 +19,5 @@ import servidor from "./servidor.js"
 
 // aqui enciendo el servidor y lo pongo a escuchar peticiones
 servidor.listen(2000, ()=>{
-    console.log("Servidor corriendo ene l puerto 2000");
+    console.log("Servidor corriendo en el puerto 2000");
 })
