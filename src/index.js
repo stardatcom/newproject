@@ -15,7 +15,9 @@ servidor.get("/xxx", (solicitud, respuesta)=>{
 servidor.listen(2000) */
 
 // aqui importo el servidor de express
-import servidor from "./servidor.js"
+import "dotenv/config";
+import "./conexionBD.js";
+import servidor from "./servidor.js";
 
 // aqui enciendo el servidor y lo pongo a escuchar peticiones
 servidor.listen(2000, ()=>{
