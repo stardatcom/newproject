@@ -1,5 +1,5 @@
 import bcryptjs from 'bcryptjs';
-import{ generarToken, verificarToken } from  '../helptool/funciones.js'
+import { generarToken, verificarToken } from  '../helptool/funciones.js';
 import ModeloUsuario from '../modelos/modeloUsuario.js';
 
 const ControladorInicioSesion = {

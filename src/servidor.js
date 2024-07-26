@@ -8,6 +8,10 @@ import enrutadorTomaHerramienta from './rutas/rutaTomaHerramienta.js';
 import enrutadorRetornoHerramineta from './rutas/rutaRetornoHerramienta.js';
 import enrutadorTomaConsumible from './rutas/rutaTomaConsumible.js';
 import enrutadorRetornoConsumible from './rutas/rutaRetornoConsumible.js';
+import enrutadorRolUsuario from  './rutas/rutaRolUsuario.js';
+import enrutadorHerramienta from  './rutas/rutaHerramienta.js';
+import enrutadorBodega from  './rutas/rutaBodega.js';
+import enrutadorOrdenDeTrabajo from './rutas/rutaOrdenDeTrabajo.js';
 
 const servidor = express();
 
@@ -22,6 +26,10 @@ servidor.use('/toma-herramienta', enrutadorTomaHerramienta);
 servidor.use('/retorno-herramienta', enrutadorRetornoHerramineta);
 servidor.use('/toma-consumible', enrutadorTomaConsumible);
 servidor.use('/retorno-consumible', enrutadorRetornoConsumible);
+servidor.use('/rol-id', enrutadorRolUsuario);
+servidor.use('/herramienta', enrutadorHerramienta);
+servidor.use('/bodega', enrutadorBodega);
+servidor.use('/orden-de-trabajo', enrutadorOrdenDeTrabajo);
 //servidor.use('/imagenes', express.static(path.resolve('imagenes')));
 
 
