@@ -1,9 +1,11 @@
 import bcrypt from "bcryptjs";
 import ModeloUsuario from "../modelos/modeloUsuario.js";
+import mongoose from "mongoose";
 
 const ControladorUsuarios = {
   crearUsuario: async (req, res) => {
     try {
+      req.body._id = new mongoose.Types.ObjectId();
       const { contrasenia } = req.body;
       const contraseniaProtegida = await bcrypt.hash(contrasenia, 10);
       const nuevoUsuario = new ModeloUsuario({

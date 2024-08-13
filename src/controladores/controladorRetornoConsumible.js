@@ -12,7 +12,7 @@ const ControladorRetornoConsumible = {
             const retornoConsumibleCreado = await nuevoRetornoConsumible.save();
             if (retornoConsumibleCreado._id) {
                 res.json({
-                    resulatdo: 'bien',
+                    resultado: 'bien',
                     mensaje: 'consumible retornado',
                     datos: null,
                 });

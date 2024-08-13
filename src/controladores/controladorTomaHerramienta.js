@@ -12,7 +12,7 @@ const ControladorTomaHerramienta = {
             const tomaHerramientaCreada = await nuevaTomaHerramienta.save();
             if (tomaHerramientaCreada._id) {
                 res.json({
-                    resulatdo: 'bien',
+                    resultado: 'bien',
                     mensaje: 'Heramienta tomada',
                     datos: null,
                 });

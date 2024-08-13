@@ -2,7 +2,7 @@ import { Schema, model } from "mongoose";
 
 const esquemaUsuario = new Schema(
     {
-        ID: { type: String },
+        //ID: { type: String },
         nombre: { type: String },
         email: { type: String },
         contrasenia: { type: String },

@@ -12,7 +12,7 @@ const ControladorRetornoHerramienta = {
             const retornoHerramientaCreado = await nuevoRetornoHerramienta.save();
             if (retornoHerramientaCreado._id) {
                 res.json({
-                    resulatdo: 'bien',
+                    resultado: 'bien',
                     mensaje: 'heramienta retornada',
                     datos: null,
                 });

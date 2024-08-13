@@ -12,7 +12,7 @@ const ControladorTomaConsumible = {
             const tomaConsumibleCreado = await nuevaTomaConsumible.save();
             if (tomaConsumibleCreado._id) {
                 res.json({
-                    resulatdo: 'bien',
+                    resultado: 'bien',
                     mensaje: 'consumible tomado',
                     datos: null,
                 });
